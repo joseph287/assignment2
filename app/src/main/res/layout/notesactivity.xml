@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourzero"
+        android:background="@color/colorPrimary"
+        app:theme="@style/AppTheme"
+        app:titleTextColor="@android:color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/headertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/imgsave"
+                android:gravity="center"
+                android:text="Add Notes"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/oneseven" />
+
+            <ImageView
+                android:id="@+id/imgsave"
+                android:layout_width="@dimen/fourfive"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/eight"
+                android:src="@drawable/icon" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/onezero"
+        android:paddingRight="@dimen/onezero">
+
+        <EditText
+            android:id="@+id/txttitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fourzero"
+            android:layout_marginTop="@dimen/onefive"
+            android:background="@drawable/deselect"
+            android:hint="Title of Notes"
+            android:paddingLeft="@dimen/five"
+            android:singleLine="true"
+            android:textSize="@dimen/onefive" />
+
+        <EditText
+            android:id="@+id/txtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txttitle"
+            android:layout_marginTop="@dimen/onezero"
+            android:background="@drawable/deselect"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="15"
+            android:maxLines="15"
+            android:minLines="8"
+            android:singleLine="true"
+            android:textSize="@dimen/onefive" />
+    </RelativeLayout>
+</RelativeLayout>

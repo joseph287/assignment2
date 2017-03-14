@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ninezero"
+        android:layout_marginBottom="@dimen/onezero"
+        android:layout_marginTop="@dimen/two"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/newitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtmore"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_marginRight="@dimen/three"
+            android:layout_marginTop="@dimen/eight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Title"
+                android:textColor="@color/color_c8c9c9"
+                android:textSize="@dimen/onefive"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:maxLines="3"
+                android:text="Description"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/onethree" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/oneeight"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/two"
+            android:layout_marginRight="@dimen/five"
+            android:layout_marginTop="@dimen/three"
+            android:gravity="center"
+            android:paddingLeft="@dimen/onezero"
+            android:paddingRight="@dimen/onezero"
+            android:textColor="@color/color_c8c9c9"
+            android:textSize="@dimen/onezero" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_212227"></View>
+</LinearLayout>

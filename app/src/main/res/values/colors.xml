@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_212227">#212227</color>
+    <color name="color_c8c9c9">#c8c9c9</color>
+    <color name="color_898e95">#898e95</color>
+    <color name="history_booking_arrival_address">#ff1282ea</color>
+    <color name="history_booking_arrival_address_pressed">#ff00acff</color>
+    <color name="history_booking_dropoff_address_pressed">#ff1be0bf</color>
+</resources>

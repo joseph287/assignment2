@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fourfive"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/fourzero">
+
+            <TextView
+                android:id="@+id/headertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="New Account"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/onefive" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/onefive">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/onefive"
+            android:paddingRight="@dimen/onefive">
+
+            <EditText
+                android:id="@+id/Reg_UserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15sp"
+                android:hint="@string/enter_a_username" />
+
+            <EditText
+                android:id="@+id/Reg_SName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:hint="@string/enter_your_name" />
+
+
+            <EditText
+                android:id="@+id/Reg_SMajor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15sp"
+                android:hint="@string/enter_your_major" />
+
+            <EditText
+                android:id="@+id/Reg_Dob"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/touch_here_to_select_a_date" />
+
+
+            <EditText
+                android:id="@+id/Reg_Email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:hint="@string/enter_your_msu_email"
+                android:inputType="textEmailAddress" />
+
+
+            <EditText
+                android:id="@+id/Reg_pass1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15sp"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPassword"
+                android:maxLength="6" />
+
+            <EditText
+                android:id="@+id/Reg_confirmpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30sp"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:maxLength="6" />
+
+            <Button
+                android:id="@+id/btn_Reg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/onefive"
+                android:backgroundTint="#0FFF"
+                android:text="@string/register" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
